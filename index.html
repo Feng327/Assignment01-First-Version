@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Sign Up Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+    <!--  
+
+*** Form should have a max-width of
+480px and should be centred along
+the left / right axis within the
+browser
+
+Form should post data to #
+
+Select Menu Values
+
+Person
+  Friend
+  Family
+  Colleague
+
+Media
+  Internet
+  Radio
+  TV
+  Newspaper
+Other
+  Magic!
+  Other...
+-->
+    <form action="#" method="post">
+      <h1>Signup</h1>
+      <fieldset class="account">
+        <legend>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-1-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM9.283 4.002H7.971L6.072 5.385v1.271l1.834-1.318h.065V12h1.312V4.002Z"/>
+          </svg>          
+          Account Info
+        </legend>
+
+        <label for="name"><br>Name:</br></label>
+        <input type="text" name="name" id="name">
+
+        <label for="email"><br>Email:</br></label>
+        <input type="text" name="email">
+        
+
+        <label for="psw"><br>Password:</br></label>
+        <input type="password" name="password">
+      </fieldset>
+
+      <fieldset class="devSkill">
+        <legend>
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="green" class="bi bi-2-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0ZM6.646 6.24c0-.691.493-1.306 1.336-1.306.756 0 1.313.492 1.313 1.236 0 .697-.469 1.23-.902 1.705l-2.971 3.293V12h5.344v-1.107H7.268v-.077l1.974-2.22.096-.107c.688-.763 1.287-1.428 1.287-2.43 0-1.266-1.031-2.215-2.613-2.215-1.758 0-2.637 1.19-2.637 2.402v.065h1.271v-.07Z"/>
+          </svg>
+          Dev Skills
+        </legend>
+        <p>Programming Languages</p>
+
+        <input type="checkbox" id="HTML" name="language">
+        <label for="HTML">HTML</label>
+
+        <input type="checkbox" id="CSS" name="language">
+        <label for="CSS">CSS</label>
+
+        <input type="checkbox" id="Javascript" name="language">
+        <label for="Javascript">Javascript</label>
+
+        <input type="checkbox" id="php" name="language">
+        <label for="php">PHP</label>
+      </fieldset>
+
+      <fieldset class="experience">
+        <legend>Experience</legend>
+        <p>Overall Experience</p>
+
+        <input type="radio" id="beginner" name="experience">
+        <label for="beginner">Beginner</label>
+
+        <input type="radio" id="intermediate" name="experience">
+        <label for="intermediate">Intermediate</label>
+
+        <input type="radio" id="advanced" name="experience">
+        <label for="advanced">Advanced</label>
+      </fieldset>
+
+      <fieldset class="other">
+        <legend>Other</legend>
+        <label for="hear">How did you hear about us?</label><br>
+        <select name="hear" id="hear">
+          <option value="" disbaled >Please Select</option>
+          <optgroup label="person">
+            <option value="friend">Friend</option>
+            <option value="family">Family</option>
+            <option value="colleague">Colleagues</option>
+          </optgroup>
+          <optgroup label="media">
+            <option value="internet">Internet</option>
+            <option value="TV">TV</option>
+            <option value="radio">Radio</option>
+            <option value="newspaper">Newspaper</option>
+          </optgroup>
+          <optgroup label="other">
+            <option value="magic">Magic!</option>
+            <option value="other">Other...</option>
+          </optgroup>
+        </select>
+        <br>
+        <label for="comments" id="comments">Comments</label><br>
+        <input type="text" id="comments-box">
+
+        <input type="submit" value="Submit" id="submit"><br>
+        <input type="reset" value="Clear Form" id="clear-form">
+      </fieldset>
+    </form>
+  </body>
+</html>
