@@ -5,12 +5,9 @@
 html {
   box-sizing: border-box;
   max-width: 480px;
-  font-family: 'Josefin Slab';
+  font-family: "Roboto Slab";
   margin: 0 auto;
-  background-image: linear-gradient(
-    rgba(86, 204, 241, 1) 60%,
-    rgba(247, 243, 243, 1)
-  );
+  background-image: linear-gradient(#fcc14d 40%, #f5401a);
 }
 *,
 *:before,
@@ -48,7 +45,7 @@ fieldset {
   border: none;
   border-radius: 0.2rem;
   margin-bottom: 0.5rem;
-  font-family: 'Josefin Slab';
+  font-family: "Roboto Slab";
   padding: 0.3rem;
 }
 
@@ -59,12 +56,12 @@ fieldset {
   padding: 0.5rem;
   margin-bottom: 1rem;
   background-color: #5fcf7f;
-  font-family: 'Josefin Slab';
+  font-family: "Roboto Slab";
 }
 #clear-form {
   width: 100%;
   padding: 0.5rem;
   border: none;
   border-radius: 0.3rem;
-  font-family: 'Josefin Slab';
+  font-family: "Roboto Slab";
 }
