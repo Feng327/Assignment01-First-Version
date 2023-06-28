@@ -5,7 +5,7 @@
 html {
   box-sizing: border-box;
   max-width: 480px;
-  font-family: 'Josefin Slab';
+  font-family: 'Roboto Slab';
   margin: 0 auto;
   background-image: linear-gradient(
     rgba(86, 204, 241, 1) 60%,
@@ -20,6 +20,7 @@ html {
 legend {
   font-size: 1rem;
   font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 form {
@@ -31,14 +32,22 @@ form {
 
 h1 {
   text-decoration: underline;
+  text-shadow: 2px 2px 2px grey;
+  text-underline-offset:15px;
+  margin-bottom: 2rem;
+}
+h2{
+  font-size: small;
 }
 fieldset {
   border: none;
   border-top: 0.1rem solid;
+  margin-bottom: 1rem;
 }
-/* svg{
-  margin-bottom: ;
-} */
+.grid-area{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr 5fr);
+}
 .account input,
 .other select,
 #comments-box {
@@ -48,8 +57,11 @@ fieldset {
   border: none;
   border-radius: 0.2rem;
   margin-bottom: 0.5rem;
-  font-family: 'Josefin Slab';
+  font-family: 'Roboto Slab';
   padding: 0.3rem;
+}
+textarea{
+  resize:vertical;
 }
 
 #submit {
@@ -59,12 +71,12 @@ fieldset {
   padding: 0.5rem;
   margin-bottom: 1rem;
   background-color: #5fcf7f;
-  font-family: 'Josefin Slab';
+  font-family: 'Roboto Slab';
 }
 #clear-form {
   width: 100%;
   padding: 0.5rem;
   border: none;
   border-radius: 0.3rem;
-  font-family: 'Josefin Slab';
+  font-family: 'Roboto Slab';
 }
