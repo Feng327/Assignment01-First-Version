@@ -50,8 +50,7 @@ fieldset {
 .other select:focus, */
 input:focus,
 .other select:focus,
-#comments-box:focus
-{
+#comments-box:focus {
   outline: none;
   background-color: white;
   border: solid;
@@ -72,7 +71,7 @@ input:focus,
 #clear-form {
   width: 100%;
   padding: 0.5rem;
-  color:#ff0000;
+  color: #ff0000;
   background-color: white;
   border: solid black;
   border-width: 1px;
